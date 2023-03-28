@@ -31,6 +31,7 @@ module.exports = {
         {
           'bg1' : 'url("/bg.jpeg")'
         }
+        }
   },
   plugins: []
 }
