@@ -18,7 +18,7 @@ const handleNav = () => {
   
   return (
   <>
-   <div className='w-screen h-screen flex'>
+   <div className='w-screen h-screen flex font-Archivo'>
    
     <div className='w-[50%] h-screen p-5'>
     	<div className='w-full h-[50px] px-8 flex justify-between items-center'>
@@ -27,6 +27,11 @@ const handleNav = () => {
     	    <h1 className='text-[18px] font-medium mr-5'>Overview</h1>
     	    <h1 className='text-[18px] font-medium'>Mint</h1>
     	  </div>
+    	</div>
+    	
+    	<div className='w-full h-full px-8 flex flex-col justify-center items-center'>
+    	  <h1 className='text-lg text-gray-800 mb-2'>Welcome to</h1>
+    	  <h1 className='text-[60px] font-bold'>MaskTailsman</h1>
     	</div>
     </div>
     
