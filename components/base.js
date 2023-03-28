@@ -20,8 +20,8 @@ const handleNav = () => {
   <>
    <div className='w-screen h-screen flex'>
     <div className='w-[50%] h-screen'></div>
-    <div className='w-[50%] h-screen overflow-hidden bg-bg1'>
-
+    <div className='w-[50%] h-screen  overflow-hidden'>
+      <img src='/bg.jpeg' className='h-screen w-auto object-cover'/>
     </div>
    </div>
   </>
