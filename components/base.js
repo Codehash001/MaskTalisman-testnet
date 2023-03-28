@@ -29,9 +29,9 @@ const handleNav = () => {
     	  </div>
     	</div>
     	
-    	<div className='w-full h-full px-8 flex flex-col justify-center items-center'>
-    	  <h1 className='text-lg text-gray-800 mb-2'>Welcome to</h1>
-    	  <h1 className='text-[60px] font-bold'>MaskTailsman</h1>
+    	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-20'>
+    	  <h1 className='text-lg text-gray-800'>Welcome to<br/>
+    	  <span className='text-black text-[66px] font-bold'>MaskTailsman</span></h1>
     	</div>
     </div>
     

@@ -12,6 +12,10 @@
   }
 }
 
+body{
+
+overflow:hidden;}
+
 :root{
   --font-family: 'Roboto', sans-serif;
   --clr-c1: #f1d168;
