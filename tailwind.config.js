@@ -27,12 +27,10 @@ module.exports = {
       animation: {
         'pulse-slow': 'pulse 10s linear infinite'
       },
-      backgroundImage: (theme)=>(
+      backgroundImage:
         {
-          'bg2-img' : "url('../public/Banner2.png')"
+          'bg1' : 'url("/bg.jpeg")'
         }
-      )
-    }
   },
   plugins: []
 }
