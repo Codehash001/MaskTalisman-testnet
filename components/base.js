@@ -21,7 +21,7 @@ const handleNav = () => {
    <div className='w-screen h-screen flex'>
     <div className='w-[50%] h-screen'></div>
     <div className='w-[50%] h-screen over'>
-      <img src='/bg.jpeg' className='object-cover overflow-hidden'/>
+      <img src='/bg.jpeg' className='object-fit overflow-hidden'/>
     </div>
    </div>
   </>
