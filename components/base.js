@@ -19,7 +19,8 @@ const handleNav = () => {
   return (
   <>
    <div className='w-screen h-screen flex'>
-    <div className='w-[50%] h-screen'>
+   
+    <div className='w-[50%] h-screen p-10'>
     	<div className='w-full h-[50px] px-8 flex justify-between items-center'>
     	  <img src='/Logo.jpeg' className='h-[40px]'/>
     	  <div className='flex items-center justify-end'>
@@ -28,9 +29,11 @@ const handleNav = () => {
     	  </div>
     	</div>
     </div>
-    <div className='w-[50%] h-screen  overflow-hidden'>
+    
+    <div className='w-[50%] h-screen  overflow-hidden p-10 rounded-lg border'>
       <img src='/bg.jpeg' className='h-screen w-auto object-cover'/>
     </div>
+    
    </div>
   </>
   )
