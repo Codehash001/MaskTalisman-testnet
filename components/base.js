@@ -31,7 +31,11 @@ const handleNav = () => {
     	
     	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-20'>
     	  <h1 className='text-lg text-gray-800'>Welcome to<br/>
-    	  <span className='text-black text-[66px] font-bold'>MaskTailsman</span></h1>
+    	  <span className='text-black text-[64px] font-bold mt-2'>MaskTailsman</span></h1>
+    	  <h1 className='text-2xl font-medium mt-8'>A must-see masterpiece that you won't want to miss</h1>
+    	  <button type="button" class="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center">
+    	  Grab Your NFT now
+    	  </button>
     	</div>
     </div>
     
