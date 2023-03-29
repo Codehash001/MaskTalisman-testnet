@@ -30,7 +30,7 @@ const [toggleState, setToggleState] = useState(1);
    <div className='w-screen h-screen flex justify-end font-Archivo overflow-x-hidden relative'>
    
        	  <div className={nav? 'absolute top-0 z-20 filter backdrop-blur-lg md:w-[50%] w-full h-screen flex flex-col items-end' : 'hidden'}>
-    	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen md:p-8 p-5'>
+    	  	<div className='flex flex-col items-center bg-white w-[70%] md:w-[100%] h-screen md:p-8 p-5'>
     	  	   <div className='w-full h-auto flex items-center justify-between'> 
     	  	     <img onClick={() => toggleTab(1)} src='/Logo.jpeg' className='h-[40px]'/>
     	  	     <AiOutlineClose size={18} className='cursor-pointer' onClick={handleNav}/>
@@ -75,7 +75,7 @@ const [toggleState, setToggleState] = useState(1);
     	<Overview/>
     	</div>
     	) :
-    	(<div className='w-full h-full md:px-8 px-5 flex flex-col justify-start items-center md:pt-[150px] pt-16 overflow-hidden'>
+    	(<div className='w-full h-full md:px-8 px-5 flex flex-col justify-start items-center md:pt-[150px] pt-5 overflow-hidden'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
     	  <h1 className='text-black md:text-[64px] text-4xl font-bold md:mt-6'>MaskTalisman</h1>
     	  <h1 className='text-xl font-medium md:mt-5 mt-2 text-center'>A must-see masterpiece that you won't want to miss!</h1>
