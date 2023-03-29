@@ -2,11 +2,14 @@ import Image from 'next/image'
 import { useState,useEffect } from "react"
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import {Link} from 'react-scroll/modules';
-
+import "@rainbow-me/rainbowkit/styles.css";
+import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
+import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
 export default function Mint () {
 
-
+const account = useAccount()
   
   return (
   <>
@@ -15,8 +18,10 @@ export default function Mint () {
     <div className='w-full h-full p-20 flex flex-col justify-center items-center rounded-lg border border-black-2'>
     	  <h1 className='text-black text-[30px] font-bold'>Mint is Live!</h1>
     	  
-    	  <div className='w-auto flex justify-center items-center'>
-                <div className="z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border border-purple rounded-md flex items-center justify-center text-white font-semibold">
+    	  <ConnectButton />
+    	  
+    	  <div className='w-auto flex justify-center items-center relative mt-5'>
+                <div className="z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border rounded-md flex items-center justify-center text-white font-semibold">
                   <p>
                     1 / 335                    
                   </p>
