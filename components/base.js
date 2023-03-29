@@ -40,10 +40,14 @@ const [toggleState, setToggleState] = useState(1);
     	{
     	toggleState == 3 ? 
     	(
+    	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
     	<Mint/>
+    	</div>
     	): toggleState == 2 ? 
     	(
+    	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
     	<Overview/>
+    	</div>
     	) :
     	(<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
