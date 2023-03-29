@@ -43,7 +43,8 @@ export const PublicMint = async (mintAmount) => {
   const mintingAmount = Number(mintAmount)
 
   let MaxPublic = Number(config.MAX_MINT_PUBLIC)
-
+  const NumberMinted = Number(await nftContract.methods.numberMinted(window.ethereum.selectedAddress).call())
+  const MintableAmount = MaxPublic - NumberMinted
   console.log('Minatble Amount ',MintableAmount)
   
   const ExceededMaxMint = MintableAmount < mintingAmount

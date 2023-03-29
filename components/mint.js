@@ -9,8 +9,7 @@ import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import {
   PublicMint,
   getTotalMinted,
-  isPaused,
-  getNumberMinted
+  isPaused
 } from '../ulits/interact';
 import {config} from '../dapp.config'
 
@@ -21,7 +20,6 @@ const account = useAccount()
 const [isPausedState , setIsPauseState] = useState (false);
 const [isPublicState, setIsPublicStat] = useState (false);
 
-const [numberMinted, setNumberMinted ] = useState (0);
 const [totalMinted , setTotalMinted] = useState (0);
 
 const [status, setStatus] = useState('')
