@@ -28,8 +28,8 @@ const [toggleState, setToggleState] = useState(1);
   <>
    <div className='w-screen h-screen flex font-Archivo overflow-hidden relative'>
    
-       	  <div className={nav? 'absolute top-0 z-20 filter backdrop-blur-lg w-[50%] h-screen flex flex-col items-end' : 'hidden'}>
-    	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen p-4'>
+       	  <div className={nav? 'absolute top-0 z-20 filter backdrop-blur-lg md:w-[50%] w-full h-screen flex flex-col items-end' : 'hidden'}>
+    	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen md:p-8 p-5'>
     	  	   <div className='w-full h-auto flex items-center justify-between'> 
     	  	     <img src='/Logo.jpeg' className='h-[40px]'/>
     	  	     <AiOutlineClose size={18} className='cursor-pointer' onClick={handleNav}/>
@@ -70,7 +70,7 @@ const [toggleState, setToggleState] = useState(1);
     	) :
     	(<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
-    	  <h1 className='text-black md:text-[64px] text-3xl font-bold md:mt-4'>MaskTalisman</h1>
+    	  <h1 className='text-black md:text-[64px] text-3xl font-bold md:mt-6'>MaskTalisman</h1>
     	  <h1 className='text-xl font-medium mt-5'>A must-see masterpiece that you won't want to miss!</h1>
     	  <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
     	  onClick={() => toggleTab(3)}>
