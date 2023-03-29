@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>SKLL</title>
-        <meta name="Description" content="Skulls Klubs LimitLess!" />
-        <link rel="icon" href="/Logoicon.png" />
+        <title>MaskTalisman</title>
+        <meta name="Description" content="MaskTalisman" />
+        <link rel="icon" href="/Logo.jpeg" />
       </Head>
       <Base/>
     </div>
