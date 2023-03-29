@@ -31,7 +31,7 @@ const account = useAccount()
                 <img
 		  alt="image"
                   src="/logoCL.jpeg"
-                  className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
+                  className="object-cover sm:h-[200px] md:w-[200px] rounded-md border border-gray-100"
                 />
     	  </div>
     	  
@@ -43,7 +43,7 @@ const account = useAccount()
     	    </div>
     	  </div>
     	  
-    	  <div className='w-full h-full flex rounded-md border mt-10'>    	  
+    	  <div className='w-full h-full flex rounded-md border mt-2'>    	  
     	    <div className='px-5 py-3 border-r'>
     	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M5 11h14v2H5z"></path></svg>
     	    </div>
