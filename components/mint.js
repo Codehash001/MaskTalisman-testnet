@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { useState,useEffect } from "react"
-import { HiBars3BottomRight } from 'react-icons/Hi';
 import {Link} from 'react-scroll/modules';
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
