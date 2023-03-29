@@ -54,7 +54,8 @@ const [toggleState, setToggleState] = useState(1);
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
     	  <h1 className='text-black text-[64px] font-bold'>MaskTalisman</h1>
     	  <h1 className='text-xl font-medium mt-3'>A must-see masterpiece that you won't want to miss!</h1>
-    	  <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center">
+    	  <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
+    	  onClick={() => toggleTab(3)}>
     	  Grab Your NFT now
     	  </button>
     	</div>)

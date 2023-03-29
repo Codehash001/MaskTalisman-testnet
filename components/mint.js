@@ -29,6 +29,7 @@ const [success, setSuccess] = useState(false)
 const [mintAmount, setMintAmount] = useState(1)
 const [isMinting, setIsMinting] = useState(false)
 const [maxMintAmount , setMaxMintAmount]= useState(1)
+const [mintAmount , setMintAmount ] = useState(1)
 const [cost , setCost] = useState(0)
 
 useEffect(() => {
@@ -90,7 +91,7 @@ const incrementMintAmount = () => {
     	  <div className='w-auto flex justify-center items-center relative mt-5'>
                 <div className="z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-2 py-2 bg-black border rounded-md flex items-center justify-center text-white font-semibold">
                   <p className='text-sm'>
-                    1 / 335                    
+                    {totalMinted} / 335                    
                   </p>
                 </div>
 
