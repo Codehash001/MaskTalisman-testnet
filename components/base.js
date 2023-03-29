@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useState,useEffect } from "react"
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { HiBars3BottomRight } from 'react-icons/Hi';
+import { HiBars3BottomRight } from 'react-icons/hi';
 import {Link} from 'react-scroll/modules';
 import Mint from './mint'
 import Overview from './overview'
@@ -33,9 +33,9 @@ const [toggleState, setToggleState] = useState(1);
     	<div className='w-full h-[50px] px-8 flex justify-between items-center'>
     	  <img src='/Logo.jpeg' className='h-[40px]'/>
     	  <div className='flex items-center justify-end'>
-    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium'>Overview</h1>
-    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5'>Mint</h1>
-    	    <HiBars3BottomRight size={18}/>
+    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-ponter'>Overview</h1>
+    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 cursor-ponter'>Mint</h1>
+    	    <HiBars3BottomRight size={18} className='cursor-ponter'/>
     	  </div>
     	</div>
     	
@@ -47,13 +47,13 @@ const [toggleState, setToggleState] = useState(1);
     	</div>
     	): toggleState == 2 ? 
     	(
-    	<div className='w-full h-full px-8 flex flex-col justify-center items-center mt-[10px]'>
+    	<div className='w-full h-full px-8 flex flex-col justify-center items-center'>
     	<Overview/>
     	</div>
     	) :
     	(<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
-    	  <h1 className='text-black text-[64px] font-bold'>MaskTailsman</h1>
+    	  <h1 className='text-black text-[64px] font-bold'>MaskTalisman</h1>
     	  <h1 className='text-xl font-medium mt-3'>A must-see masterpiece that you won't want to miss!</h1>
     	  <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center">
     	  Grab Your NFT now
@@ -62,7 +62,7 @@ const [toggleState, setToggleState] = useState(1);
     	}
     </div>
     
-    <div className='w-[50%] h-screen  overflow-hidden rounded-lg'>
+    <div className='w-[50%] h-screen  overflow-hidden'>
       <img src='/bg.jpeg' className='h-screen w-auto object-cover'/>
     </div>
     
