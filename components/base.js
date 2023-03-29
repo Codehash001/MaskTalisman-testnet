@@ -27,7 +27,7 @@ const [toggleState, setToggleState] = useState(1);
   
   return (
   <>
-   <div className='w-screen h-screen flex font-Archivo overflow-x-hidden relative'>
+   <div className='w-screen h-screen flex justify-end font-Archivo overflow-x-hidden relative'>
    
        	  <div className={nav? 'absolute top-0 z-20 filter backdrop-blur-lg md:w-[50%] w-full h-screen flex flex-col items-end' : 'hidden'}>
     	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen md:p-8 p-5'>
@@ -46,7 +46,7 @@ const [toggleState, setToggleState] = useState(1);
     	  	</div>
     	  </div>
    
-        <div className='hidden md:flex w-[50%] h-screen  overflow-hidden fixed top-0 right-0 z-30'>
+        <div className='hidden md:flex w-[50%] h-screen  overflow-hidden fixed top-0 left-0 z-30'>
     <div className='h-full p-8'>
       <img src='/bg.jpeg' className='h-full w-auto object-cover rounded-lg'/>
     </div>
