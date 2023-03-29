@@ -23,6 +23,11 @@ export const isPublicMintLive = async () => {
   return isPublicMintState
 }
 
+export const getTotalMinted = async () => {
+  const totalMinted = await nftContract.methods.totalSupply().call()
+  return totalMinted
+}
+
   
   //Set up Public Mint------------------------------------------------------------------------------------>
 
