@@ -79,7 +79,7 @@ const incrementMintAmount = () => {
   <>
    <div className='font-Archivo '>
    
-    <div className='w-full h-full md:px-20 px-4 md:py-4 py-2 flex flex-col justify-center items-center rounded-lg border border-black-2 relative'>
+    <div className='w-full h-full md:px-20 px-4 md:py-4 py-2 flex flex-col justify-center items-center rounded-lg lg:border-2 relative'>
     
     	  <h1 className='text-black text-[40px] font-bold text-center'>{isPublicState? 'Mint is Live!' : isPausedState ? 'Will be Live soon!' : 'Will be Live soon!'}</h1>
     	  

@@ -46,6 +46,12 @@ const [toggleState, setToggleState] = useState(1);
     	  	</div>
     	  </div>
    
+        <div className='hidden md:flex w-[50%] h-screen  overflow-hidden fixed top-0 right-0 z-30'>
+    <div className='h-full p-8'>
+      <img src='/bg.jpeg' className='h-full w-auto object-cover rounded-lg'/>
+    </div>
+    </div>
+    
     <div className='w-full md:w-[50%] h-screen px-5 pt-5 filter backdrop-blur-sm md:backdrop-blur-none'>
     	<div className='w-full h-[50px] md:px-8 px-2 flex justify-between items-center bg-white '>
     	  <img onClick={() => toggleTab(1)} src='/Logo.jpeg' className='h-[40px]'/>
@@ -86,13 +92,7 @@ const [toggleState, setToggleState] = useState(1);
     	}
     </div>
     
-    <div className='hidden md:flex w-[50%] h-screen  overflow-hidden stickey top-0 right-0 z-30'>
-    <div className='h-full p-8'>
-      <img src='/bg.jpeg' className='h-full w-auto object-cover rounded-lg'/>
-    </div>
-    </div>
-    
-   
+      
    </div>
   </>
   )
