@@ -46,7 +46,7 @@ const [toggleState, setToggleState] = useState(1);
     	</div>
     	): toggleState == 2 ? 
     	(
-    	<div className='w-full h-full px-8 flex flex-col justify-start items-center'>
+    	<div className='w-full h-full px-8 flex flex-col justify-start items-center overflow-y-auto'>
     	<Overview/>
     	</div>
     	) :

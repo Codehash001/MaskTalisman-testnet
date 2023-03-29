@@ -79,9 +79,9 @@ const incrementMintAmount = () => {
   <>
    <div className='font-Archivo'>
    
-    <div className='w-full h-full md:px-20 md:py-5 flex flex-col justify-center items-center rounded-lg border border-black-2 relative'>
+    <div className='w-full h-full md:px-20 px-4 md:py-5 py-2 flex flex-col justify-center items-center rounded-lg border border-black-2 relative'>
     
-    	  <h1 className='text-black text-[40px] font-bold mt-10'>{isPublicState? 'Mint is Live!' : isPausedState ? 'Will be Live soon!' : 'Will be Live soon!'}</h1>
+    	  <h1 className='text-black text-[40px] font-bold mt-10 text-center'>{isPublicState? 'Mint is Live!' : isPausedState ? 'Will be Live soon!' : 'Will be Live soon!'}</h1>
     	  
     	  
     	  
@@ -95,7 +95,7 @@ const incrementMintAmount = () => {
                 <img
 		  alt="image"
                   src="/logoCL.jpeg"
-                  className="object-cover md:h-[240px] h-[120px] md:w-[240px] w-[120px] rounded-md border border-gray-100"
+                  className="object-cover md:h-[240px] h-[200px] md:w-[240px] w-[200px] rounded-md border border-gray-100"
                 />
     	  </div>
     	  
@@ -112,17 +112,17 @@ const incrementMintAmount = () => {
     	  </div>
     	  
     	  <div className='w-full h-full flex rounded-md border mt-2'>    	  
-    	    <div className='md:px-5 px-2 py-3 border-r cursor-pointer' onClick={decrementMintAmount}>
+    	    <div className='px-5 py-3 border-r cursor-pointer' onClick={decrementMintAmount}>
     	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M5 11h14v2H5z"></path></svg>
     	    </div>
     	    
-    	    <div className='py-3 md:px-20 px-2 border-r'><h1 className='text-lg'> {mintAmount} </h1></div>
+    	    <div className='py-3 md:px-20 px-6 border-r'><h1 className='text-lg'> {mintAmount} </h1></div>
     	    
-    	    <div className='md:px-5 px-2 py-3 border-r cursor-pointer' onClick={incrementMintAmount}>
+    	    <div className='px-5  py-3 border-r cursor-pointer' onClick={incrementMintAmount}>
     	       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
     	    </div>
     	    
-    	    <button className='md:px-10 px-4 py-3 bg-black text-white font-semibold hover:text-bold' onClick={publicMintHandler}> Mint </button>    	    
+    	    <button className='px-10 py-3 bg-black text-white font-semibold hover:text-bold' onClick={publicMintHandler}> Mint </button>    	    
     	  </div>
     	  
     	  <div className="z-10 absolute top-2 left-2"><ConnectButton /></div>
