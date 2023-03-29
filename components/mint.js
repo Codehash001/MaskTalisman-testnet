@@ -31,11 +31,11 @@ const account = useAccount()
                 <img
 		  alt="image"
                   src="/logoCL.jpeg"
-                  className="object-cover sm:h-[200px] md:w-[200px] rounded-md border border-gray-100"
+                  className="object-cover sm:h-[240px] md:w-[240px] rounded-md border border-gray-100"
                 />
     	  </div>
     	  
-    	  <div className='w-full flex justify-between border-t border-b py-4 mt-5'>
+    	  <div className='w-full flex justify-between border-t border-b py-3 px-5 mt-5'>
     	  <p>Total</p>
     	    <div className="flex items-center space-x-3">
     	    <p>9.99 MATIC</p>
@@ -54,7 +54,7 @@ const account = useAccount()
     	       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
     	    </div>
     	    
-    	    <div className='px-10 py-3 bg-black text-white'> Mint </div>    	    
+    	    <div className='px-10 py-3 bg-black text-white font-semibold'> Mint </div>    	    
     	  </div>
     	  
     	  <div className="z-10 absolute top-2 left-2"><ConnectButton /></div>
