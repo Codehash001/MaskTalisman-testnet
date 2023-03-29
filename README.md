@@ -13,7 +13,7 @@ npx hardhat run scripts/deploy.js
 ```
 
 
-ntroducing the 335 Avatars NFT collection, a stunning and unique set of digital assets that celebrates the magic and wonder of the Ethereum blockchain.
+introducing the 335 Avatars NFT collection, a stunning and unique set of digital assets that celebrates the magic and wonder of the Ethereum blockchain.
 
 Each of the 333 Avatars NFTs is a one-of-a-kind creation, designed to capture the essence of a different aspect of the Ethereum ecosystem. From miners and developers to traders and investors, these avatars represent the diverse and vibrant community that makes Ethereum so special.
 
