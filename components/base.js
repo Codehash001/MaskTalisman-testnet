@@ -32,13 +32,13 @@ const [toggleState, setToggleState] = useState(1);
        	  <div className={nav? 'absolute top-0 z-20 filter backdrop-blur-lg md:w-[50%] w-full h-screen flex flex-col items-end' : 'hidden'}>
     	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen md:p-8 p-5'>
     	  	   <div className='w-full h-auto flex items-center justify-between'> 
-    	  	     <img src='/Logo.jpeg' className='h-[40px]'/>
+    	  	     <img onClick={() => toggleTab(1)} src='/Logo.jpeg' className='h-[40px]'/>
     	  	     <AiOutlineClose size={18} className='cursor-pointer' onClick={handleNav}/>
     	  	   </div>
-    	  	   <h1 className='md:text-[25px] text-[15px] mt-5'>Home</h1>
-    	  	   <h1 className='md:text-[25px] text-[15px] mt-5'>Disclaimer</h1>
-    	  	   <h1 className='md:text-[25px] text-[15px] mt-5'>Privacy Policy</h1>
-    	  	   <h1 className='md:text-[25px] text-[15px] mt-5'>Terms Condition</h1>
+    	  	   <h1 onClick={() => toggleTab(1)} className='md:text-[25px] text-[15px] mt-5'>Home</h1>
+    	  	   <a href='/disclaimer'><h1 className='md:text-[25px] text-[15px] mt-5'>Disclaimer</h1></a>
+    	  	   <a href='/policy'><h1 className='md:text-[25px] text-[15px] mt-5'>Privacy Policy</h1></a>
+    	  	   <a href='/terms'><h1 className='md:text-[25px] text-[15px] mt-5'>Terms Condition</h1></a>
     	  	   <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
     	  onClick={() => toggleTab(3)}>
     	  Mint an NFT
@@ -48,7 +48,7 @@ const [toggleState, setToggleState] = useState(1);
    
     <div className='w-full md:w-[50%] h-screen px-5 pt-5 filter backdrop-blur-sm md:backdrop-blur-none'>
     	<div className='w-full h-[50px] md:px-8 px-2 flex justify-between items-center bg-white '>
-    	  <img src='/Logo.jpeg' className='h-[40px]'/>
+    	  <img onClick={() => toggleTab(1)} src='/Logo.jpeg' className='h-[40px]'/>
     	  <div className='flex items-center justify-end'>
     	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer'>Overview</h1>
     	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 md:mx-8 cursor-pointer'>Mint</h1>
