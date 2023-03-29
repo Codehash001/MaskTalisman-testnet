@@ -99,7 +99,7 @@ const incrementMintAmount = () => {
                 />
     	  </div>
     	  
-    	  <div className='w-full flex justify-between border rounded-md py-3 px-5 mt-5 filter drop-shadow-md'>
+    	  <div className='w-full flex justify-between border rounded-md py-3 px-5 mt-5 filter drop-shadow-xl'>
     	  <p>Total</p>
     	    <div className="flex items-center space-x-3">
     	    <p>
@@ -111,9 +111,9 @@ const incrementMintAmount = () => {
     	    </div>
     	  </div>
     	  
-    	  <div className='w-full h-full flex rounded-md border mt-2 filter drop-shadow-md'>    	  
+    	  <div className='w-full h-full flex rounded-md border mt-2 filter drop-shadow-xl'>    	  
     	    <div className='px-5 py-3 border-r cursor-pointer' onClick={decrementMintAmount}>
-    	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M5 11h14v2H5z"></path></svg>
+    	      <svg className='hover:scale-110' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M5 11h14v2H5z"></path></svg>
     	    </div>
     	    
     	    <div className='py-3 md:px-20 px-6 border-r'><h1 className='text-lg'> {mintAmount} </h1></div>
