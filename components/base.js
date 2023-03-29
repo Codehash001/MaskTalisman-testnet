@@ -35,10 +35,10 @@ const [toggleState, setToggleState] = useState(1);
     	  	     <img onClick={() => toggleTab(1)} src='/Logo.jpeg' className='h-[40px]'/>
     	  	     <AiOutlineClose size={18} className='cursor-pointer' onClick={handleNav}/>
     	  	   </div>
-    	  	   <h1 onClick={() => toggleTab(1)} className='md:text-[25px] text-[15px] mt-5 cursor-pointer hover:bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent'>Home</h1>
-    	  	   <a href='/disclaimer'><h1 className='md:text-[25px] text-[15px] mt-5 hover:bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent'>Disclaimer</h1></a>
-    	  	   <a href='/policy'><h1 className='md:text-[25px] text-[15px] mt-5 hover:bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent'>Privacy Policy</h1></a>
-    	  	   <a href='/terms'><h1 className='md:text-[25px] text-[15px] mt-5 hover:bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent'>Terms Condition</h1></a>
+    	  	   <h1 onClick={() => toggleTab(1)} className='md:text-[25px] text-[15px] mt-5 cursor-pointer hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-clip-text hover:text-transparent'>Home</h1>
+    	  	   <a href='/disclaimer'><h1 className='md:text-[25px] text-[15px] mt-5 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-clip-text hover:text-transparent'>Disclaimer</h1></a>
+    	  	   <a href='/policy'><h1 className='md:text-[25px] text-[15px] mt-5 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-clip-text hover:text-transparent'>Privacy Policy</h1></a>
+    	  	   <a href='/terms'><h1 className='md:text-[25px] text-[15px] mt-5 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-clip-text hover:text-transparent'>Terms Condition</h1></a>
     	  	   <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
     	  onClick={() => toggleTab(3)}>
     	  Mint an NFT
@@ -63,8 +63,8 @@ const [toggleState, setToggleState] = useState(1);
     	<div className='w-full h-[50px] md:px-8 px-5 flex justify-between items-center bg-white '>
     	  <img onClick={() => toggleTab(1)} src='/Logo.jpeg' className='h-[40px] cursor-pointer'/>
     	  <div className='flex items-center justify-end'>
-    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer hover:bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent'>Overview</h1>
-    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 md:mx-8 cursor-pointer hover:bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent'>Mint</h1>
+    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-clip-text hover:text-transparent'>Overview</h1>
+    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 md:mx-8 cursor-pointer hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-clip-text hover:text-transparent'>Mint</h1>
     	    <AiOutlineMenu size={18} className='cursor-pointer' onClick={handleNav}/>
     	  </div>
     	  
