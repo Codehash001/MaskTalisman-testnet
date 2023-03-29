@@ -26,18 +26,9 @@ const [toggleState, setToggleState] = useState(1);
   
   return (
   <>
-   <div className='w-screen h-screen flex font-Archivo overflow-hidden'>
+   <div className='w-screen h-screen flex font-Archivo overflow-hidden relative'>
    
-    <div className='w-full md:w-[50%] h-screen px-5 pt-5 filter backdrop-blur-sm md:backdrop-blur-none'>
-    	<div className='w-full h-[50px] md:px-8 px-2 flex justify-between items-center bg-white relative'>
-    	  <img src='/Logo.jpeg' className='h-[40px]'/>
-    	  <div className='flex items-center justify-end'>
-    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer'>Overview</h1>
-    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 cursor-pointer'>Mint</h1>
-    	    <AiOutlineMenu size={18} className='cursor-pointer' onClick={handleNav}/>
-    	  </div>
-    	  
-    	  <div className={nav? 'absolute top-0 z-20 backdrop-blur-lg w-full h-screen flex flex-col items-end' : 'hidden'}>
+       	  <div className={nav? 'absolute top-0 z-20 filter backdrop-blur-lg w-[50%] h-screen flex flex-col items-end' : 'hidden'}>
     	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen p-4'>
     	  	   <div className='w-full h-auto flex items-center justify-between'> 
     	  	     <img src='/Logo.jpeg' className='h-[40px]'/>
@@ -53,6 +44,16 @@ const [toggleState, setToggleState] = useState(1);
     	  </button>
     	  	</div>
     	  </div>
+   
+    <div className='w-full md:w-[50%] h-screen px-5 pt-5 filter backdrop-blur-sm md:backdrop-blur-none'>
+    	<div className='w-full h-[50px] md:px-8 px-2 flex justify-between items-center bg-white '>
+    	  <img src='/Logo.jpeg' className='h-[40px]'/>
+    	  <div className='flex items-center justify-end'>
+    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer'>Overview</h1>
+    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 cursor-pointer'>Mint</h1>
+    	    <AiOutlineMenu size={18} className='cursor-pointer' onClick={handleNav}/>
+    	  </div>
+    	  
     	</div>
     	
     	{
