@@ -113,17 +113,17 @@ const incrementMintAmount = () => {
     	  
     	  <div className='w-full h-full flex rounded-md border mt-2 filter drop-shadow-lg'>    	  
     	    <div className='px-5 py-3 border-r cursor-pointer' onClick={decrementMintAmount}>
-    	      <svg className='hover:scale-150' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M5 11h14v2H5z"></path></svg>
+    	      <svg className='hover:scale-110' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M5 11h14v2H5z"></path></svg>
     	    </div>
     	    
     	    <div className='py-3 md:px-20 px-6 border-r'><h1 className='text-lg'> {mintAmount} </h1></div>
     	    
     	    <div className='px-5  py-3 border-r cursor-pointer' onClick={incrementMintAmount}>
-    	       <svg className='hover:scale-150' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
+    	       <svg className='hover:scale-110' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
     	    </div>
     	    
     	    {account.isConnected?
-    	   ( <button className='px-10 py-3 bg-black text-white font-semibold hover:text-bold hover:scale-150' onClick={publicMintHandler}> Mint</button> ) :    	    (<button className='px-10 py-3 bg-gray-700/60 text-white font-semibold cursor-not-allowed '> Mint</button> )
+    	   ( <button className='px-10 py-3 bg-black text-white font-semibold hover:text-bold hover:scale-110' onClick={publicMintHandler}> Mint</button> ) :    	    (<button className='px-10 py-3 bg-gray-700/60 text-white font-semibold cursor-not-allowed '> Mint</button> )
     	    }
     	  </div>
     	  

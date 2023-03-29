@@ -35,7 +35,7 @@ const [toggleState, setToggleState] = useState(1);
     	  	     <img onClick={() => toggleTab(1)} src='/Logo.jpeg' className='h-[40px]'/>
     	  	     <AiOutlineClose size={18} className='cursor-pointer' onClick={handleNav}/>
     	  	   </div>
-    	  	   <h1 onClick={() => toggleTab(1)} className='md:text-[25px] text-[15px] mt-5'>Home</h1>
+    	  	   <h1 onClick={() => toggleTab(1)} className='md:text-[25px] text-[15px] mt-5 cursor-pointer'>Home</h1>
     	  	   <a href='/disclaimer'><h1 className='md:text-[25px] text-[15px] mt-5'>Disclaimer</h1></a>
     	  	   <a href='/policy'><h1 className='md:text-[25px] text-[15px] mt-5'>Privacy Policy</h1></a>
     	  	   <a href='/terms'><h1 className='md:text-[25px] text-[15px] mt-5'>Terms Condition</h1></a>
@@ -60,12 +60,12 @@ const [toggleState, setToggleState] = useState(1);
     	{
     	toggleState == 3 ? 
     	(
-    	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[10px] overflow-y-auto'>
+    	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[10px]'>
     	<Mint/>
     	</div>
     	): toggleState == 2 ? 
     	(
-    	<div className='w-full h-full px-8 flex flex-col justify-start items-center overflow-y-auto mt-6'>
+    	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-6'>
     	<Overview/>
     	</div>
     	) :
@@ -73,6 +73,11 @@ const [toggleState, setToggleState] = useState(1);
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
     	  <h1 className='text-black md:text-[64px] text-3xl font-bold md:mt-6'>MaskTalisman</h1>
     	  <h1 className='text-xl font-medium mt-5 text-center'>A must-see masterpiece that you won't want to miss!</h1>
+    	  
+    	   <div className='md:hidden h-auto w-full'>
+      <img src='/bg.jpeg' className='w-full h-auto object-cover rounded-md'/>
+    </div>
+    
     	  <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
     	  onClick={() => toggleTab(3)}>
     	  Grab Your NFT now
@@ -81,15 +86,13 @@ const [toggleState, setToggleState] = useState(1);
     	}
     </div>
     
-    <div className='hidden md:flex w-[50%] h-screen  overflow-hidden'>
+    <div className='hidden md:flex w-[50%] h-screen  overflow-hidden fixed top-0 z-30'>
     <div className='h-full p-8'>
       <img src='/bg.jpeg' className='h-full w-auto object-cover rounded-lg'/>
     </div>
     </div>
     
-    <div className='hidden h-screen w-full absolute top-0 -z-20'>
-      <img src='/bg.jpeg' className='h-full w-auto object-cover'/>
-    </div>
+   
    </div>
   </>
   )
