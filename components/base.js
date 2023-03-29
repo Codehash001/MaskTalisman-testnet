@@ -37,7 +37,7 @@ const [toggleState, setToggleState] = useState(1);
     	    <AiOutlineMenu size={18} className='cursor-pointer' onClick={handleNav}/>
     	  </div>
     	  
-    	  <div className={nav? 'absolute top-0 z-20 backdrop-blur-sm w-full h-screen flex flex-col items-end' : 'hidden'}>
+    	  <div className={nav? 'absolute top-0 z-20 backdrop-blur-lg w-full h-screen flex flex-col items-end' : 'hidden'}>
     	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen p-4'>
     	  	   <div className='w-full h-auto flex items-center justify-between'> 
     	  	     <img src='/Logo.jpeg' className='h-[40px]'/>
@@ -47,6 +47,10 @@ const [toggleState, setToggleState] = useState(1);
     	  	   <h1 className='md:text-[25px] text-[15px] mt-5'>Disclaimer</h1>
     	  	   <h1 className='md:text-[25px] text-[15px] mt-5'>Privacy Policy</h1>
     	  	   <h1 className='md:text-[25px] text-[15px] mt-5'>Terms Condition</h1>
+    	  	   <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
+    	  onClick={() => toggleTab(3)}>
+    	  Mint an NFT
+    	  </button>
     	  	</div>
     	  </div>
     	</div>
@@ -65,8 +69,8 @@ const [toggleState, setToggleState] = useState(1);
     	) :
     	(<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
-    	  <h1 className='text-black md:text-[64px] text-3xl font-bold mt-2'>MaskTalisman</h1>
-    	  <h1 className='text-xl font-medium mt-3'>A must-see masterpiece that you won't want to miss!</h1>
+    	  <h1 className='text-black md:text-[64px] text-3xl font-bold md:mt-4'>MaskTalisman</h1>
+    	  <h1 className='text-xl font-medium mt-5'>A must-see masterpiece that you won't want to miss!</h1>
     	  <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
     	  onClick={() => toggleTab(3)}>
     	  Grab Your NFT now
