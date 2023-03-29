@@ -12,8 +12,8 @@ export default function Mint () {
   <>
    <div className='font-Archivo'>
    
-    <div className='w-full h-full px-8 flex flex-col justify-start items-center'>
-    	  <h1 className='text-black text-[64px] font-bold'>Mint</h1>
+    <div className='w-full h-full p-20 flex flex-col justify-center items-center rounded-lg border border-black-2'>
+    	  <h1 className='text-black text-[30px] font-bold'>Mint is Live!</h1>
     	</div>
     
     
