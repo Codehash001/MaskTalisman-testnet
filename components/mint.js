@@ -17,13 +17,13 @@ const account = useAccount()
    
     <div className='w-full h-full px-20 py-5 flex flex-col justify-center items-center rounded-lg border border-black-2 relative'>
     
-    	  <h1 className='text-black text-[30px] font-bold mt-10'>Mint is Live!</h1>
+    	  <h1 className='text-black text-[40px] font-bold mt-10'>Mint is Live!</h1>
     	  
     	  
     	  
     	  <div className='w-auto flex justify-center items-center relative mt-5'>
-                <div className="z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border rounded-md flex items-center justify-center text-white font-semibold">
-                  <p>
+                <div className="z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-2 py-2 bg-black border rounded-md flex items-center justify-center text-white font-semibold">
+                  <p className='text-sm'>
                     1 / 335                    
                   </p>
                 </div>
