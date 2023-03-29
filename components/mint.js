@@ -24,7 +24,7 @@ export default function Mint () {
     	    <div className='py-5 px-20 border-r'><h1 className='text-lg'> 1 </h1></div>
     	    
     	    <div className='p-5 border-r'>
-    	       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'></path></svg>
+    	       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M5 11h14v2H5z"></path></svg>
     	    </div>
     	    
     	    <div className='p-5 bg-black text-white'> Mint </div>
