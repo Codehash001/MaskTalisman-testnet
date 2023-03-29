@@ -15,7 +15,7 @@ export default function Mint () {
     <div className='w-full h-full p-20 flex flex-col justify-center items-center rounded-lg border border-black-2'>
     	  <h1 className='text-black text-[30px] font-bold'>Mint is Live!</h1>
     	  
-    	<div className='w-full h-full flex rounded-md border mt-10'> 
+    	<div className='w-full h-full flex justify-center items-center rounded-md border mt-10'> 
     	<img src='/logoCL.jpeg' className='h-[240px]'/>
     	</div>
     	  
