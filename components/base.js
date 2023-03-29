@@ -68,7 +68,7 @@ const [toggleState, setToggleState] = useState(1);
     </div>
     </div>
     
-    <div className='md:hidden h-screen w-full absolute top-0 -z-20'>
+    <div className='hidden h-screen w-full absolute top-0 -z-20'>
       <img src='/bg.jpeg' className='h-full w-auto object-cover'/>
     </div>
    </div>
