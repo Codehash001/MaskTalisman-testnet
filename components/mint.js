@@ -99,7 +99,7 @@ const incrementMintAmount = () => {
                 />
     	  </div>
     	  
-    	  <div className='w-full flex justify-between border-t border-b py-3 px-5 mt-5'>
+    	  <div className='w-full flex justify-between border rounded-md py-3 px-5 mt-5 filter drop-shadow-md'>
     	  <p>Total</p>
     	    <div className="flex items-center space-x-3">
     	    <p>
@@ -111,7 +111,7 @@ const incrementMintAmount = () => {
     	    </div>
     	  </div>
     	  
-    	  <div className='w-full h-full flex rounded-md border mt-2'>    	  
+    	  <div className='w-full h-full flex rounded-md border mt-2 filter drop-shadow-md'>    	  
     	    <div className='px-5 py-3 border-r cursor-pointer' onClick={decrementMintAmount}>
     	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M5 11h14v2H5z"></path></svg>
     	    </div>
@@ -128,9 +128,9 @@ const incrementMintAmount = () => {
     	  </div>
     	  
     	  {status && success ?
-    	  (<div className='text-sm p-4 border boder-green rounded-md mt-4'>{status}</div>) :
+    	  (<div className='text-sm p-4 border boder-green-500 rounded-md mt-4'>{status}</div>) :
     	  status && !success ?
-    	  (<div className='text-sm p-4 border boder-red rounded-md mt-4'>{status}</div>):
+    	  (<div className='text-sm p-4 border boder-red-500 rounded-md mt-4'>{status}</div>):
     	  (<></>)
     	  }
     	  

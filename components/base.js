@@ -27,7 +27,7 @@ const [toggleState, setToggleState] = useState(1);
   
   return (
   <>
-   <div className='w-screen h-screen flex font-Archivo overflow-hidden relative'>
+   <div className='w-screen h-screen flex font-Archivo overflow-x-hidden relative'>
    
        	  <div className={nav? 'absolute top-0 z-20 filter backdrop-blur-lg md:w-[50%] w-full h-screen flex flex-col items-end' : 'hidden'}>
     	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen md:p-8 p-5'>
