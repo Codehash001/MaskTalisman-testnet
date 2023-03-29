@@ -15,10 +15,11 @@ const account = useAccount()
   <>
    <div className='font-Archivo'>
    
-    <div className='w-full h-full p-20 flex flex-col justify-center items-center rounded-lg border border-black-2'>
+    <div className='w-full h-full px-20 py-5 flex flex-col justify-center items-center rounded-lg border border-black-2 relative'>
+    
     	  <h1 className='text-black text-[30px] font-bold'>Mint is Live!</h1>
     	  
-    	  <ConnectButton />
+    	  
     	  
     	  <div className='w-auto flex justify-center items-center relative mt-5'>
                 <div className="z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border rounded-md flex items-center justify-center text-white font-semibold">
@@ -47,6 +48,8 @@ const account = useAccount()
     	    
     	    <div className='px-10 py-3 bg-black text-white'> Mint </div>    	    
     	  </div>
+    	  
+    	  <div className="z-10 absolute top-2 left-2"><ConnectButton /></div>
     	</div>
     
     
