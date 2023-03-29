@@ -6,21 +6,21 @@ import { useEffect } from 'react';
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
-import { Chain, mainnet } from 'wagmi/chains';
+import { Chain, mainnet, polygon } from 'wagmi/chains';
 
 
 const { provider, chains } = configureChains(
-  [mainnet],
+  [polygon, mainnet],
   [
     jsonRpcProvider({
-      rpc: chain => ({ http: 'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X' }),
+      rpc: chain => ({ http: 'https://polygon-mumbai.g.alchemy.com/v2/shuTYtsoNXogQJNqZg-bhN4ReOXFiND4' }),
     }),
   ]
 );
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
-  jsonRpcUrl: 'https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X',
+  jsonRpcUrl: 'https://polygon-mumbai.g.alchemy.com/v2/shuTYtsoNXogQJNqZg-bhN4ReOXFiND4',
   chains
 });
 

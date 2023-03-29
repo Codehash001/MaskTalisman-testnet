@@ -4,8 +4,8 @@ const config = {
   title: 'Dapp',
   description: 'test minting Dapp',
   contractAddress: '1DJMRX8FBU3YD4DGK8FJMVBAVJYW2646YD', //polygon contract
-  maxMintAmount: 5,
-  publicSalePrice: 0.6
+  MAX_MINT_PUBLIC: 20,
+  PublicMintCost: 9.99
 }
 
 const onboardOptions = {
