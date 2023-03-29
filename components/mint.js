@@ -28,8 +28,6 @@ const [success, setSuccess] = useState(false)
 
 const [mintAmount, setMintAmount] = useState(1)
 const [isMinting, setIsMinting] = useState(false)
-const [maxMintAmount , setMaxMintAmount]= useState(1)
-const [mintAmount , setMintAmount ] = useState(1)
 const [cost , setCost] = useState(0)
 
 useEffect(() => {
@@ -47,7 +45,6 @@ useEffect(() => {
 
 useEffect(() => {
   const init = async () => {
-    setMaxMintAmount(config.MAX_MINT_PUBLIC)
     setCost(config.PublicMintCost)
   }
 
@@ -66,7 +63,7 @@ const publicMintHandler = async () => {
 }
 
 const incrementMintAmount = () => {
-    if (mintAmount < maxMintAmount) {
+    if (mintAmount < config.MAX_MINT_PUBLIC) {
       setMintAmount(mintAmount + 1)
     }
   }
@@ -121,7 +118,7 @@ const incrementMintAmount = () => {
     	    
     	    <div className='py-3 px-20 border-r'><h1 className='text-lg'> {mintAmount} </h1></div>
     	    
-    	    <div className='px-5 py-3 border-r cursor-pointer onClick={incrementMintAmount}'>
+    	    <div className='px-5 py-3 border-r cursor-pointer' onClick={incrementMintAmount}>
     	       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
     	    </div>
     	    
