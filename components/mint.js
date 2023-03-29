@@ -10,7 +10,7 @@ export default function Mint () {
   
   return (
   <>
-   <div className='w-screen h-screen flex font-Archivo'>
+   <div className='font-Archivo'>
    
     <div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
     	  <h1 className='text-black text-[64px] font-bold'>Mint</h1>
