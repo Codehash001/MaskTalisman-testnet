@@ -5,7 +5,7 @@ const keccak256 = require('keccak256')
 
 // global BigInt
 
-const web3 = createAlchemyWeb3('https://eth-sepolia.g.alchemy.com/v2/YtSHYS1BcAFu1PPEY25zMv5cj0R39f-X')
+const web3 = createAlchemyWeb3('https://polygon-mumbai.g.alchemy.com/v2/shuTYtsoNXogQJNqZg-bhN4ReOXFiND4')
 const contract = require('../artifacts/contracts/MaskTalisman.sol/MaskTalisman.json')
 const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
 
