@@ -32,9 +32,9 @@ const [toggleState, setToggleState] = useState(1);
     	<div className='w-full h-[50px] px-8 flex justify-between items-center'>
     	  <img src='/Logo.jpeg' className='h-[40px]'/>
     	  <div className='flex items-center justify-end'>
-    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-ponter'>Overview</h1>
-    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 cursor-ponter'>Mint</h1>
-    	    <AiOutlineMenu size={18} className='cursor-ponter'/>
+    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer'>Overview</h1>
+    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 cursor-pointer'>Mint</h1>
+    	    <AiOutlineMenu size={18} className='cursor-pointer'/>
     	  </div>
     	</div>
     	
