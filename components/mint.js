@@ -2,8 +2,6 @@ import Image from 'next/image'
 import { useState,useEffect } from "react"
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import {Link} from 'react-scroll/modules';
-import Mint from './mint'
-import Overviwe from './overview'
 
 
 export default function Mint () {
