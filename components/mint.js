@@ -132,6 +132,7 @@ const incrementMintAmount = () => {
     	  status && !success ?
     	  (<div className='text-sm p-4 border boder-red rounded-md mt-4'>{status}</div>):
     	  (<></>)
+    	  }
     	  
     	</div>
     
