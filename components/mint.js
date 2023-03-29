@@ -9,7 +9,8 @@ import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import {
   PublicMint,
   getTotalMinted,
-  isPaused
+  isPaused,
+  isPublicMintLive
 } from '../ulits/interact';
 import {config} from '../dapp.config'
 
