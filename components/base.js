@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { useState,useEffect } from "react"
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { HiBars3BottomRight } from 'react-icons/Hi';
 import {Link} from 'react-scroll/modules';
 import Mint from './mint'
 import Overview from './overview'
@@ -32,8 +33,9 @@ const [toggleState, setToggleState] = useState(1);
     	<div className='w-full h-[50px] px-8 flex justify-between items-center'>
     	  <img src='/Logo.jpeg' className='h-[40px]'/>
     	  <div className='flex items-center justify-end'>
-    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium mr-5'>Overview</h1>
-    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium'>Mint</h1>
+    	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium'>Overview</h1>
+    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5'>Mint</h1>
+    	    <HiBars3BottomRight size={18}/>
     	  </div>
     	</div>
     	
