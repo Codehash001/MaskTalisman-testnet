@@ -84,7 +84,7 @@ const incrementMintAmount = () => {
    
     <div className='w-full h-full px-20 py-5 flex flex-col justify-center items-center rounded-lg border border-black-2 relative'>
     
-    	  <h1 className='text-black text-[40px] font-bold mt-10'>{isPublicState? 'Mint is Live!' : 'Will be Live soon!'}</h1>
+    	  <h1 className='text-black text-[40px] font-bold mt-10'>{isPublicState? 'Mint is Live!' : isPausedState ? 'Will be Live soon!' : 'Will be Live soon!'}</h1>
     	  
     	  
     	  
