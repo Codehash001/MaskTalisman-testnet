@@ -13,7 +13,7 @@ export default function Overview () {
    <div className='font-Archivo'>
    
     <div className='w-full h-full flex flex-col justify-start items-center'>
-    	  <p className='text-black text-[15px]'>
+    	  <p className='text-black md:text-[15px] text-[12px]'>
     	  introducing the 335 Avatars NFT collection, a stunning and unique set of digital assets that celebrates the magic and wonder of the Ethereum blockchain.<br/><br/>
 
 Each of the 333 Avatars NFTs is a one-of-a-kind creation, designed to capture the essence of a different aspect of the Ethereum ecosystem. From miners and developers to traders and investors, these avatars represent the diverse and vibrant community that makes Ethereum so special.
