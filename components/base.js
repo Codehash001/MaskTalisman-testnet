@@ -78,13 +78,13 @@ const [toggleState, setToggleState] = useState(1);
     	(<div className='w-full h-full md:px-8 px-5 flex flex-col justify-start items-center md:pt-[150px] pt-5 overflow-hidden'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
     	  <h1 className='text-black md:text-[64px] text-4xl font-bold md:mt-6'>MaskTalisman</h1>
-    	  <h1 className='text-xl font-medium md:mt-5 mt-2 text-center'>A must-see masterpiece that you won't want to miss!</h1>
+    	  <h1 className='md:text-xl text-lg font-medium md:mt-5 mt-2 text-center'>A must-see masterpiece that you won't want to miss!</h1>
     	  
-    	   <div className='md:hidden h-auto w-full'>
+    	   <div className='md:hidden h-auto w-full mt-4 px-2'>
       <img src='/bg.jpeg' className='w-full h-auto object-cover rounded-md'/>
     </div>
     
-    	  <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
+    	  <button type="button" className="md:mt-10 mt-6 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
     	  onClick={() => toggleTab(3)}>
     	  Grab Your NFT now
     	  </button>
