@@ -17,7 +17,7 @@ const account = useAccount()
    
     <div className='w-full h-full px-20 py-5 flex flex-col justify-center items-center rounded-lg border border-black-2 relative'>
     
-    	  <h1 className='text-black text-[30px] font-bold'>Mint is Live!</h1>
+    	  <h1 className='text-black text-[30px] font-bold mt-10'>Mint is Live!</h1>
     	  
     	  
     	  
@@ -33,6 +33,14 @@ const account = useAccount()
                   src="/logoCL.jpeg"
                   className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
                 />
+    	  </div>
+    	  
+    	  <div className='w-full flex justify-between border-t border-b py-4 mt-5'>
+    	  <p>Total</p>
+    	    <div className="flex items-center space-x-3">
+    	    <p>9.99 MATIC</p>
+    	    <p>+ GAS</p>
+    	    </div>
     	  </div>
     	  
     	  <div className='w-full h-full flex rounded-md border mt-10'>    	  
