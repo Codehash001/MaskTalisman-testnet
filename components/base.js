@@ -52,8 +52,8 @@ const [toggleState, setToggleState] = useState(1);
     </div>
     </div>
     
-    <div className='w-full md:w-[50%] h-screen px-5 pt-5 filter backdrop-blur-sm md:backdrop-blur-none'>
-    	<div className='w-full h-[50px] md:px-8 px-2 flex justify-between items-center bg-white '>
+    <div className='w-full md:w-[50%] h-screen md:px-5 pt-5 filter backdrop-blur-sm md:backdrop-blur-none'>
+    	<div className='w-full h-[50px] md:px-8 px-5 flex justify-between items-center bg-white '>
     	  <img onClick={() => toggleTab(1)} src='/Logo.jpeg' className='h-[40px]'/>
     	  <div className='flex items-center justify-end'>
     	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer'>Overview</h1>
@@ -75,10 +75,10 @@ const [toggleState, setToggleState] = useState(1);
     	<Overview/>
     	</div>
     	) :
-    	(<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[10px] overflow-hidden'>
+    	(<div className='w-full h-full md:px-8 px-5 flex flex-col justify-start items-center md:pt-[150px] pt-16 overflow-hidden'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
-    	  <h1 className='text-black md:text-[64px] text-3xl font-bold md:mt-6'>MaskTalisman</h1>
-    	  <h1 className='text-xl font-medium mt-5 text-center'>A must-see masterpiece that you won't want to miss!</h1>
+    	  <h1 className='text-black md:text-[64px] text-4xl font-bold md:mt-6'>MaskTalisman</h1>
+    	  <h1 className='text-xl font-medium md:mt-5 mt-2 text-center'>A must-see masterpiece that you won't want to miss!</h1>
     	  
     	   <div className='md:hidden h-auto w-full'>
       <img src='/bg.jpeg' className='w-full h-auto object-cover rounded-md'/>
