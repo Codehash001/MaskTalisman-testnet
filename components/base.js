@@ -37,7 +37,9 @@ const [toggleState, setToggleState] = useState(1);
     	    <AiOutlineMenu size={18} className='cursor-pointer' onClick={handleNav}/>
     	  </div>
     	  
-    	  <div className={nav? 'absolute top-0 backdrop-blur-sm w-full h-full' : 'hidden'}></div>
+    	  <div className={nav? 'absolute top-0 backdrop-blur-sm w-full h-full' : 'hidden'}>
+    	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen'></div>
+    	  </div>
     	</div>
     	
     	{
