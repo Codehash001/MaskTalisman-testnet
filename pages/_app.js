@@ -6,11 +6,11 @@ import { useEffect } from 'react';
 import { getDefaultWallets, RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig, useAccount } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
-import { Chain, mainnet, polygon } from 'wagmi/chains';
+import { Chain, mainnet, polygon , polygonMumbai } from 'wagmi/chains';
 
 
 const { provider, chains } = configureChains(
-  [polygon, mainnet],
+  [polygonMumbai, mainnet],
   [
     jsonRpcProvider({
       rpc: chain => ({ http: 'https://polygon-mumbai.g.alchemy.com/v2/shuTYtsoNXogQJNqZg-bhN4ReOXFiND4' }),
