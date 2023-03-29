@@ -69,7 +69,7 @@ const [toggleState, setToggleState] = useState(1);
     	<Overview/>
     	</div>
     	) :
-    	(<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
+    	(<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[10px] overflow-hidden'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
     	  <h1 className='text-black md:text-[64px] text-3xl font-bold md:mt-6'>MaskTalisman</h1>
     	  <h1 className='text-xl font-medium mt-5 text-center'>A must-see masterpiece that you won't want to miss!</h1>
@@ -86,7 +86,7 @@ const [toggleState, setToggleState] = useState(1);
     	}
     </div>
     
-    <div className='hidden md:flex w-[50%] h-screen  overflow-hidden fixed top-0 right-0 z-30'>
+    <div className='hidden md:flex w-[50%] h-screen  overflow-hidden stickey top-0 right-0 z-30'>
     <div className='h-full p-8'>
       <img src='/bg.jpeg' className='h-full w-auto object-cover rounded-lg'/>
     </div>
