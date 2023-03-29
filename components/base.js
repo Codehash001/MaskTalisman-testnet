@@ -26,9 +26,9 @@ const [toggleState, setToggleState] = useState(1);
   
   return (
   <>
-   <div className='w-screen h-screen flex font-Archivo'>
+   <div className='w-screen h-screen flex font-Archivo overflow-hidden'>
    
-    <div className='w-full md:w-[50%] h-screen px-5 pt-5 bg-bg1 md:bg-transparent'>
+    <div className='w-full md:w-[50%] h-screen px-5 pt-5'>
     	<div className='w-full h-[50px] px-8 flex justify-between items-center'>
     	  <img src='/Logo.jpeg' className='h-[40px]'/>
     	  <div className='flex items-center justify-end'>
@@ -66,6 +66,10 @@ const [toggleState, setToggleState] = useState(1);
     <div className='h-full p-8'>
       <img src='/bg.jpeg' className='h-full w-auto object-cover rounded-lg'/>
     </div>
+    </div>
+    
+    <div className='md:hidden h-screen w-full p-8 absolute top-0 -z-20'>
+      <img src='/bg.jpeg' className='h-full w-auto object-cover'/>
     </div>
    </div>
   </>
