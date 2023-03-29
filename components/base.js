@@ -37,8 +37,17 @@ const [toggleState, setToggleState] = useState(1);
     	    <AiOutlineMenu size={18} className='cursor-pointer' onClick={handleNav}/>
     	  </div>
     	  
-    	  <div className={nav? 'absolute top-0 backdrop-blur-sm w-full h-full' : 'hidden'}>
-    	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen'></div>
+    	  <div className={nav? 'absolute top-0 backdrop-blur-sm w-full h-screen flex flex-col items-end' : 'hidden'}>
+    	  	<div className='flex flex-col items-center bg-white w-[70%] h-screen p-4'>
+    	  	   <div className='flex items-center justify-between'> 
+    	  	     <img src='/Logo.jpeg' className='h-[40px]'/>
+    	  	     <AiOutlineClose size={18} className='cursor-pointer' onClick={handleNav}/>
+    	  	   </div>
+    	  	   <h1 className='md:text-[25px] text-[15px] mt-3'>Home</h1>
+    	  	   <h1 className='md:text-[25px] text-[15px] mt-3'>Disclaimer</h1>
+    	  	   <h1 className='md:text-[25px] text-[15px] mt-3'>Privacy Policy</h1>
+    	  	   <h1 className='md:text-[25px] text-[15px] mt-3'>Terms Condition</h1>
+    	  	</div>
     	  </div>
     	</div>
     	
