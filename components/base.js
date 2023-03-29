@@ -19,6 +19,7 @@ const [toggleState, setToggleState] = useState(1);
 
    const toggleTab = (index) =>{
     setToggleState (index);
+    setNav(false);
    }
 
 
@@ -50,7 +51,7 @@ const [toggleState, setToggleState] = useState(1);
     	  <img src='/Logo.jpeg' className='h-[40px]'/>
     	  <div className='flex items-center justify-end'>
     	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer'>Overview</h1>
-    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 cursor-pointer'>Mint</h1>
+    	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 md:mx-8 cursor-pointer'>Mint</h1>
     	    <AiOutlineMenu size={18} className='cursor-pointer' onClick={handleNav}/>
     	  </div>
     	  
@@ -59,19 +60,19 @@ const [toggleState, setToggleState] = useState(1);
     	{
     	toggleState == 3 ? 
     	(
-    	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[10px]'>
+    	<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[10px] overflow-y-auto'>
     	<Mint/>
     	</div>
     	): toggleState == 2 ? 
     	(
-    	<div className='w-full h-full px-8 flex flex-col justify-start items-center overflow-y-auto'>
+    	<div className='w-full h-full px-8 flex flex-col justify-start items-center overflow-y-auto mt-6'>
     	<Overview/>
     	</div>
     	) :
     	(<div className='w-full h-full px-8 flex flex-col justify-start items-center mt-[150px]'>
     	  <h1 className='text-lg text-gray-800'>Welcome to</h1>
     	  <h1 className='text-black md:text-[64px] text-3xl font-bold md:mt-6'>MaskTalisman</h1>
-    	  <h1 className='text-xl font-medium mt-5'>A must-see masterpiece that you won't want to miss!</h1>
+    	  <h1 className='text-xl font-medium mt-5 text-center'>A must-see masterpiece that you won't want to miss!</h1>
     	  <button type="button" className="mt-10 text-white dark:text-black font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 rounded-sm text-sm px-5 py-2.5 text-center"
     	  onClick={() => toggleTab(3)}>
     	  Grab Your NFT now

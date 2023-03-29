@@ -83,7 +83,7 @@ const incrementMintAmount = () => {
     
     	  <h1 className='text-black text-[40px] font-bold mt-10 text-center'>{isPublicState? 'Mint is Live!' : isPausedState ? 'Will be Live soon!' : 'Will be Live soon!'}</h1>
     	  
-    	  
+    	  <ConnectButton />
     	  
     	  <div className='w-auto flex justify-center items-center relative mt-5'>
                 <div className="z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-2 py-2 bg-black border rounded-md flex items-center justify-center text-white font-semibold">
@@ -122,10 +122,17 @@ const incrementMintAmount = () => {
     	       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill='#000'><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
     	    </div>
     	    
-    	    <button className='px-10 py-3 bg-black text-white font-semibold hover:text-bold' onClick={publicMintHandler}> Mint </button>    	    
+    	    {account.isConnected?
+    	   ( <button className='px-10 py-3 bg-black text-white font-semibold hover:text-bold' onClick={publicMintHandler}> Mint</button> ) :    	    (<button className='px-10 py-3 bg-gray/60 text-white font-semibold curso-not-allowed '> Mint</button> )
+    	    }
     	  </div>
     	  
-    	  <div className="z-10 absolute top-2 left-2"><ConnectButton /></div>
+    	  {status && success ?
+    	  (<div className='text-sm p-4 border boder-green rounded-md mt-4'>{status}</div>) :
+    	  status && !success ?
+    	  (<div className='text-sm p-4 border boder-red rounded-md mt-4'>{status}</div>):
+    	  (<></>)
+    	  
     	</div>
     
     
