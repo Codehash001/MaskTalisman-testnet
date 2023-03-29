@@ -34,7 +34,7 @@ const [toggleState, setToggleState] = useState(1);
     	  <div className='flex items-center justify-end'>
     	    <h1 onClick={() => toggleTab(2)} className='text-[18px] font-medium cursor-pointer'>Overview</h1>
     	    <h1 onClick={() => toggleTab(3)} className='text-[18px] font-medium mx-5 cursor-pointer'>Mint</h1>
-    	    <AiOutlineMenu size={18} className='cursor-pointer'/ onClick={handleNav}>
+    	    <AiOutlineMenu size={18} className='cursor-pointer' onClick={handleNav}/>
     	  </div>
     	  
     	  <div className={nav? 'absolute top-0 backdrop-blur-sm w-full h-full' : 'hidden'}></div>
