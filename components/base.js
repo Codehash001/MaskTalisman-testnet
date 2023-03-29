@@ -62,9 +62,10 @@ const [toggleState, setToggleState] = useState(1);
     </div>
     
     <div className='w-[50%] h-screen  overflow-hidden'>
-      <img src='/bg.jpeg' className='h-screen w-auto object-cover'/>
+    <div className='h-full p-8'>
+      <img src='/bg.jpeg' className='h-full w-auto object-cover rounded-lg'/>
     </div>
-    
+    </div>
    </div>
   </>
   )
