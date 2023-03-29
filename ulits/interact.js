@@ -15,7 +15,7 @@ const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
 
 export const isPaused = async () => {
   const isPaused = await nftContract.methods.paused().call()
-  return isPused
+  return isPaused
 }
 
 export const isPublicMintLive = async () => {
